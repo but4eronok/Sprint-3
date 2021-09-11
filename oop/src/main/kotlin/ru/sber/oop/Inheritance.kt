@@ -10,7 +10,9 @@ open class Room(val name: String, val size: Int) {
 
     fun description() = "Room: $name"
 
-    open fun load() = "Nothing much to see here..."
+    open fun load() = monster.getSalutation()
+
+    private val monster : Monster = Goblin()
 
 }
 
