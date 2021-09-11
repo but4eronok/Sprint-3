@@ -10,7 +10,6 @@ interface Fightable {
 
 }
 
-//TODO: create class Player, Monster, Goblin here...
 class Player : Fightable {
     val name: String = "Geralth of Rivia"
 
