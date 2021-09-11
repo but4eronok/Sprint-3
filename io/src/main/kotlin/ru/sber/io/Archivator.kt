@@ -29,6 +29,7 @@ class Archivator {
         } finally {
             fis?.close()
             zos?.close()
+            zos?.closeEntry()
         }
     }
 
@@ -47,6 +48,7 @@ class Archivator {
         } finally {
             zis?.close()
             fos?.close()
+            zis?.closeEntry()
         }
     }
 }
